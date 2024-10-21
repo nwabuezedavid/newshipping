@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "school/wsgi.py",
+        "src": "shipping/wsgi.py",
         "use": "@vercel/python"
       }
     ],
