@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://iship.seawavelogs.com/tResult.php?q=476576876969 -->
+<html lang="en"><div id="in-page-channel-node-id" data-channel-name="in_page_channel_n0Vggn"></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  {% load static %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <link rel="icon" href="https://iship.seawavelogs.com/favicon.ico">
+    
+    <link href="{% static './TRACKINGRESULTfiles/font-awesome.min.css'%}" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>TRACKING RESULT</title>
+
+    <!-- Bootstrap core CSS -->
+    
+    <link href="{% static './TRACKINGRESULTfiles/bootstrap.min.css'%}" rel="stylesheet">
+  </head> <script src="{% static './js/main.js' %}"></script>
+  <script src="{% static './js/tailwin.js' %}"></script>
+  <script src="{% static './js/tailwin plugin.js' %}"></script>
+
+  <body>
+
+    <main role="main" class="container mx-auto p-4">
+      <!-- Header with Tracking Number and Logout Button -->
+      <div class="flex justify-between items-center mb-8">
+        <h2 class="text-lg font-bold">TRACKING NUMBER: {{item.uuid}}</h2>
+        <span class="pull-right">
+          {% if not request.user.username %}
+            <a href="{% url 'home' %}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+              LOGOUT
+            </a>
+          {% else %}
+            <a href="{% url 'adminb' request.user.id %}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+              LOGOUT
+            </a>
+          {% endif %}
+        </span>
+      </div>
+    
+      <!-- Logo and Information -->
+      <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+        <img src="{% static './TRACKINGRESULTfiles/logo.png' %}" alt="Logo" class="h-24 w-auto mb-4 md:mb-0">
+        <img src="{% static './TRACKINGRESULTfiles/logo2.jpeg' %}" alt="Delivery Trucks" class="h-32 w-auto">
+      </div>
+    
+      <!-- Sender and Receiver Details -->
+      <div class="bg-white shadow-md rounded-lg p-4 mb-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Sender Details -->
+          <div>
+            <h3 class="text-red-500 text-sm font-semibold mb-2">Sender Details:</h3>
+            <table class="min-w-full text-sm border border-gray-300">
+              <thead class="bg-red-600 text-white">
+                <tr>
+                  <th class="p-2">Sender's Name</th>
+                  <th class="p-2">Shipper's Address</th>
+                  <th class="p-2">Sender Email</th>
+                  <th class="p-2">Sender Phone Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-2">{{item.SName}}</td>
+                  <td class="p-2">{{item.SAddress}}</td>
+                  <td class="p-2">{{item.SEmail}}</td>
+                  <td class="p-2">{{item.SPhone}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+    
+          <!-- Receiver Details -->
+          <div>
+            <h3 class="text-red-500 text-sm font-semibold mb-2">Receiver Details:</h3>
+            <table class="min-w-full text-sm border border-gray-300">
+              <thead class="bg-red-600 text-white">
+                <tr>
+                  <th class="p-2">Receiver's Name</th>
+                  <th class="p-2">Receiver's Address</th>
+                  <th class="p-2">Receiver Email</th>
+                  <th class="p-2">Receiver Phone Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-2">{{item.RName}}</td>
+                  <td class="p-2">{{item.RAddress}}</td>
+                  <td class="p-2">{{item.REmail}}</td>
+                  <td class="p-2">{{item.RPhone}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Origin and Destination Details -->
+      <div class="bg-white shadow-md rounded-lg p-4 mb-8">
+        <h3 class="text-red-500 text-sm font-semibold mb-2">Origin-Destination</h3>
+        <table class="min-w-full text-sm border border-gray-300">
+          <thead class="bg-red-600 text-white">
+            <tr>
+              <th class="p-2">Origin</th>
+              <th class="p-2">Destination</th>
+              <th class="p-2">Mode</th>
+              <th class="p-2">Carrier Reference Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p-2">{{item.Origin | upper}}</td>
+              <td class="p-2">{{item.Destination}}</td>
+              <td class="p-2">{{item.Mode}}</td>
+              <td class="p-2">{{item.uuid | upper}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    
+      <!-- Quantity and Weight Details -->
+      <div class="bg-white shadow-md rounded-lg p-4 mb-8">
+        <h3 class="text-red-500 text-sm font-semibold mb-2">Quantity-Weight</h3>
+        <table class="min-w-full text-sm border border-gray-300">
+          <thead class="bg-red-600 text-white">
+            <tr>
+              <th class="p-2">Quantity</th>
+              <th class="p-2">Weight (Kg)</th>
+              <th class="p-2">Amount ($)</th>
+              <th class="p-2">Payment Mode</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p-2">{{item.Quantity}}</td>
+              <td class="p-2">{{item.Weight}}</td>
+              <td class="p-2">{{item.Amount}}</td>
+              <td class="p-2">{{item.PaymentMode}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    
+      <!-- Departure and Delivery Details -->
+      <div class="bg-white shadow-md rounded-lg p-4 mb-8">
+        <h3 class="text-red-500 text-sm font-semibold mb-2">Departure-Delivery</h3>
+        <table class="min-w-full text-sm border border-gray-300">
+          <thead class="bg-red-600 text-white">
+            <tr>
+              <th class="p-2">Departure Date</th>
+              <th class="p-2">Delivery Date</th>
+              <th class="p-2">Package Items</th>
+              <th class="p-2">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p-2">{{item.DepartureDate}}</td>
+              <td class="p-2">{{item.Delivery}}</td>
+              <td class="p-2">{{item.PackageItems}}</td>
+              <td class="p-2">{{item.message}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    
+      <!-- Shipment Travel History -->
+      <div class="bg-white shadow-md rounded-lg p-4 mb-8">
+        <h3 class="text-red-500 text-sm font-semibold mb-2"><i class="fa fa-tags"></i> Shipment Travel History</h3>
+        <table class="min-w-full text-sm border border-gray-300">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="p-2">Date &amp; Time</th>
+              <th class="p-2">Location</th>
+              <th class="p-2">Status</th>
+              <th class="p-2">Remarks</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% if item.history %}
+            {% for hist in item.history.all %}
+            <tr>
+              <td class="p-2">{{hist.datetimec}}</td>
+              <td class="p-2">{{hist.Location}}</td>
+              <td class="p-2">{{hist.Status}}</td>
+              <td class="p-2">{{hist.Remarks}}</td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
+    </main>
+    
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static './TRACKINGRESULTfiles/jquery.min.js.download"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="{% static './TRACKINGRESULTfiles/popper.min.js.download"></script>
+    <script src="{% static './TRACKINGRESULTfiles/bootstrap.min.js.download"></script>
+  
+
+</body></html>

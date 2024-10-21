@@ -1,0 +1,1023 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block content %}
+
+<div class="parsysPathStage parsys">
+  <span class="link-anchor" id="parsysPathStage_marketing_stage_trac"></span>
+
+  <div class="c-voc-marketing-stage component-margin">
+    <div class="c-voc-marketing-stage--container">
+      <picture>
+        <img
+          class="c-voc-marketing-stage--bg-image"
+          src="{% static 'main/employee-receives-customer-signature-0001.web.785.246.jpg'%}"
+          alt=""
+        />
+      </picture>
+    </div>
+    <div class="c-voc-marketing-stage--content has-background-20">
+      <div class="c-voc-marketing-stage--textbox">
+        <h2 class="c-voc-marketing-stage--block-text level4">
+          Track Your Shipment
+        </h2>
+        <div class="c-voc-tracking-bar js--tracking-bar">
+          <form
+            class="c-tracking-input--form c-voc-tracking-bar--form "
+             
+            method="post"
+
+          >
+          {% csrf_token %}
+            <div class="c-voc-tracking-bar--input-outer-group">
+              <div
+                class="c-voc-tracking-bar--input-inner-group"
+                data-form-value-state="unset"
+              >
+                <input
+                  class="c-voc-tracking-bar--input js--tracking-bar--input"
+                  id="c-voc-marketing-stage-tracking--input"
+                  name="code"
+                  type="text"
+                  data-error-message="Please enter your tracking number(s)"
+                  required=""
+                  data-di-id="#c-voc-marketing-stage-tracking--input"
+                />
+                <label
+                  class="c-voc-tracking-bar--element-label"
+                  for="c-voc-marketing-stage-tracking--input"
+                  >Enter your tracking number(s)</label
+                >
+
+                <button
+                  class="c-voc-tracking-bar--button  base-button"
+                  aria-label="Please fill out this field."
+                  type="submit"
+                >
+                  Track
+                </button>
+              </div>
+            </div>
+            <p
+              tabindex="-1"
+              class="c-form--element-base c-form-step--error-message js--tracking-invalid--focus"
+            >
+              Please enter your tracking number(s)
+            </p>
+          </form>
+        </div>
+        <div>
+          <h2 class="c-voc-marketing-stage--link level4"></h2>
+        </div>
+      </div>
+
+      <div class="c-voc-marketing-stage--card-container">
+        <a
+          class="c-voc-quicklink shadow-small l-grid--w-100pc-s l-grid--w-50pc-m"
+          data-analytics='{"trackedInteractions":"basic","interactionType":"dhl_utf_contentInteraction","content":{"type":"Link Teaser Box Element","interaction":"Click","position":"","context":"Track Your Shipment","attributes":{"component":"dhl/components/elements/link-teaser-box-element","name":"Ship now","topic":"book online"}}}'
+        >
+          <div class="c-voc-quicklink-body">
+            <div class="c-voc-quicklink-image">
+              <img
+                class="c-voc-quicklink-image"
+                src="{% static 'main/glo-core-online.svg'%}"
+                alt=""
+              />
+            </div>
+            <div class="c-voc-quicklink-text">
+              <span
+                class="c-voc-quicklink-headline link link-internal has-icon"
+              >
+                Ship Now</span
+              >
+              <p class="c-voc-quicklink-subtext">Find the right service</p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          class="c-voc-quicklink shadow-small l-grid--w-100pc-s l-grid--w-50pc-m"
+          data-analytics='{"trackedInteractions":"basic","interactionType":"dhl_utf_contentInteraction","content":{"type":"Link Teaser Box Element","interaction":"Click","position":"","context":"Track Your Shipment","attributes":{"component":"dhl/components/elements/link-teaser-box-element","name":"Get a Quote","topic":"get a quote"}}}'
+        >
+          <div class="c-voc-quicklink-body">
+            <div class="c-voc-quicklink-image">
+              <img
+                class="c-voc-quicklink-image"
+                src="{% static 'main/glo-core-getaquote.svg'%}"
+                alt=""
+              />
+            </div>
+            <div class="c-voc-quicklink-text">
+              <span
+                class="c-voc-quicklink-headline link link-internal has-icon"
+              >
+                Get a Quote</span
+              >
+              <p class="c-voc-quicklink-subtext">
+                Estimate cost to share and compare
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          class="c-voc-quicklink shadow-small l-grid--w-100pc-s l-grid--w-50pc-m imp-triangle"
+          data-analytics='{"trackedInteractions":"basic","interactionType":"dhl_utf_contentInteraction","content":{"type":"Link Teaser Box Element","interaction":"Click","position":"","context":"Track Your Shipment","attributes":{"component":"dhl/components/elements/link-teaser-box-element","name":"DHL for Business","topic":"frequent shipping"}}}'
+        >
+          <div class="c-voc-quicklink-body">
+            <div class="c-voc-quicklink-image">
+              <img
+                class="c-voc-quicklink-image"
+                src="{% static 'main/glo-core-gogreen-warehousing.svg'%}"
+                alt=""
+              />
+            </div>
+            <div class="c-voc-quicklink-text">
+              <span
+                class="c-voc-quicklink-headline link link-internal has-icon"
+              >
+                DHL for Business</span
+              >
+              <p class="c-voc-quicklink-subtext">
+                Shipping regularly? Request a business account and profit from
+                exclusive benefits
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="parsysPath parsys">
+  <span class="link-anchor" id="parsysPath_horizontal_ruler_cop"></span>
+  <div
+    class="c-horizontal-ruler component-margin l-grid l-grid--center-s invisible"
+  >
+    <hr class="c-horizontal-ruler--wide" />
+  </div>
+
+  <span class="link-anchor" id="parsysPath_horizontal_ruler"></span>
+  <div
+    class="c-horizontal-ruler component-margin l-grid l-grid--center-s invisible"
+  >
+    <hr class="c-horizontal-ruler--wide" />
+  </div>
+
+  <div
+    class="experiencefragment"
+    data-xf-path="https://www.dhl.com/content/experience-fragments/dhl/en/core/sub_page_teaser/image_right_2_greycolumns/xbu_master_spt_dhl_home_document_and_package_shipping"
+  >
+    <span class="link-anchor" id="parsysPath_experiencefragment"></span>
+    <div
+      id="experiencefragment-2011cfabbf"
+      class="cmp-experiencefragment cmp-experiencefragment--image_right_2_greycolumns"
+    >
+      <div class="xf-content-height">
+        <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
+          <div
+            class="container container-margin-bottom aem-GridColumn aem-GridColumn--default--12"
+          >
+            <span class="link-anchor" id="root_container_copy_copy"></span>
+
+            <div
+              id="container-399e29c597"
+              class="cmp-container cmp-container--white cmp-container--padding-size-0 cmp-container--equal-height-desktop cmp-container--right-on-top cmp-container--horizontal-overlap-left-on-top"
+            >
+              <div
+                class="aem-Grid aem-Grid--12 aem-Grid--tablet--12 aem-Grid--default--12 aem-Grid--phone--12"
+              >
+                <div
+                  class="container aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0"
+                >
+                  <span
+                    class="link-anchor"
+                    id="container_copy_copy_container"
+                  ></span>
+                  <span
+                    class="link-anchor"
+                    id="root_container_copy_copy_container"
+                  ></span>
+
+                  <div
+                    id="container-b33a97f1e7"
+                    class="cmp-container cmp-container--transparent cmp-container--padding-position-top cmp-container--padding-position-bottom cmp-container--padding-size-21 cmp-container--left-on-top"
+                  >
+                    <div
+                      class="aem-Grid aem-Grid--6 aem-Grid--tablet--12 aem-Grid--default--6 aem-Grid--phone--12"
+                    >
+                      <div
+                        class="container container-shadow-top aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--6"
+                      >
+                        <span
+                          class="link-anchor"
+                          id="container_container"
+                        ></span>
+                        <span
+                          class="link-anchor"
+                          id="container_copy_copy_container_container"
+                        ></span>
+                        <span
+                          class="link-anchor"
+                          id="root_container_copy_copy_container_container"
+                        ></span>
+
+                        <div
+                          id="container-7fa47bd834"
+                          class="cmp-container cmp-container--white cmp-container--padding-size-28 cmp-container--left-on-top"
+                        >
+                          <div
+                            class="aem-Grid aem-Grid--12 aem-Grid--default--12"
+                          >
+                            <div
+                              class="title title-left title-black title-margin-none aem-GridColumn aem-GridColumn--default--12"
+                            >
+                              <span
+                                class="link-anchor"
+                                id="container_container_title"
+                              ></span>
+
+                              <div class="cmp-title" id="title-a4326da619">
+                                <h2
+                                  class="cmp-title__text cmp-title__text--level2"
+                                >
+                                  Document and Parcel Shipping
+                                </h2>
+                              </div>
+                            </div>
+                            <div
+                              class="text text-left text-black text-margin-top aem-GridColumn aem-GridColumn--default--12"
+                            >
+                              <span
+                                class="link-anchor"
+                                id="container_container_text"
+                              ></span>
+
+                              <div id="text-93f20c62fa" class="cmp-text">
+                                <p
+                                  class="cmp-text__inline-text cmp-text__inline-text--small-body-copy"
+                                >
+                                  <span
+                                    class="cmp-text__inline-text cmp-text__inline-text--intro-size-2"
+                                    >For All Shippers</span
+                                  >
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              class="separator separator-type-introduction aem-GridColumn aem-GridColumn--default--12"
+                            >
+                              <span
+                                class="link-anchor"
+                                id="container_container_separator"
+                              ></span>
+                              <div
+                                class="cmp-separator"
+                                id="separator-234fe37b6d"
+                              >
+                                <hr class="cmp-separator__horizontal-rule" />
+                              </div>
+                            </div>
+                            <div
+                              class="text text-left text-black text-margin-top aem-GridColumn aem-GridColumn--default--12"
+                            >
+                              <span
+                                class="link-anchor"
+                                id="container_container_text_589125532"
+                              ></span>
+
+                              <div id="text-629537f428" class="cmp-text">
+                                <p
+                                  class="cmp-text__inline-text cmp-text__inline-text--small-body-copy"
+                                >
+                                  <span
+                                    class="cmp-text__inline-text cmp-text__inline-text--intro-size-3"
+                                    >Learn about {{site.name}}  – the undisputed
+                                    global leader in international express
+                                    shipping.</span
+                                  >
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="container container-shadow-middle aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--6"
+                      >
+                        <span
+                          class="link-anchor"
+                          id="container_container_426561891"
+                        ></span>
+                        <span
+                          class="link-anchor"
+                          id="container_copy_copy_container_container_426561891"
+                        ></span>
+                        <span
+                          class="link-anchor"
+                          id="root_container_copy_copy_container_container_426561891"
+                        ></span>
+
+                        <div
+                          id="container-b2044e35a2"
+                          class="cmp-container cmp-container--light-grey cmp-container--gutter-21 cmp-container--padding-size-28 cmp-container--left-on-top"
+                        >
+                          <div
+                            class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--phone--12"
+                          >
+                            <div
+                              class="title title-left title-black title-margin-none aem-GridColumn aem-GridColumn--default--12"
+                            >
+                              <span
+                                class="link-anchor"
+                                id="container_container_426561891_title"
+                              ></span>
+
+                              <div class="cmp-title" id="title-9a3e5a7fe0">
+                                <h5
+                                  class="cmp-title__text cmp-title__text--level5"
+                                >
+                                  Services Available
+                                </h5>
+                              </div>
+                            </div>
+                            <div
+                              class="list dynamic-icon-bg-color bg-yellow top-margin bullet-color-black spacing-large aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0"
+                            >
+                              <span
+                                class="link-anchor"
+                                id="container_container_426561891_list"
+                              ></span>
+                              <ul id="list-eb922bf8c1" class="cmp-list">
+                                <li
+                                  class="cmp-list__item has-icon icon-plane-air-freights bi bi-airplane"
+                                >
+                                  <span class="cmp-list__item-title"
+                                    >Next Possible Business Day</span
+                                  >
+                                </li>
+
+                                <li
+                                  class="cmp-list__item has-icon icon-flexible-parcel-deliverys bi bi-bezier2"
+                                >
+                                  <span class="cmp-list__item-title"
+                                    >Flexible Import/Export Options
+                                  </span>
+                                </li>
+                              </ul>
+                            </div>
+                            <div
+                              class="list dynamic-icon-bg-color bg-yellow top-margin bullet-color-black spacing-large aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0"
+                            >
+                              <span
+                                class="link-anchor"
+                                id="container_container_426561891_list_copy"
+                              ></span>
+                              <ul id="list-130673f9a5" class="cmp-list">
+                                <li
+                                  class="cmp-list__item has-icon icon-primary-secondary-packagings bi bi-bicycle  "
+                                >
+                                  <span class="cmp-list__item-title"
+                                    >Tailored Business Solutions
+                                  </span>
+                                </li>
+
+                                <li
+                                  class="cmp-list__item has-icon icon-added-values bi bi-boxes"
+                                >
+                                  <span class="cmp-list__item-title"
+                                    >Wide Variety of Optional Services
+                                  </span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="container container-margin-bottom container-shadow-bottom aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--6"
+                      >
+                        <span
+                          class="link-anchor"
+                          id="container_container_1383678985"
+                        ></span>
+                        <span
+                          class="link-anchor"
+                          id="container_copy_copy_container_container_1383678985"
+                        ></span>
+                        <span
+                          class="link-anchor"
+                          id="root_container_copy_copy_container_container_1383678985"
+                        ></span>
+
+                        <div
+                          id="container-3e231005e7"
+                          class="cmp-container cmp-container--white cmp-container--padding-size-28 cmp-container--left-on-top"
+                        >
+                          <div
+                            class="aem-Grid aem-Grid--12 aem-Grid--default--12"
+                          >
+                            <div
+                              class="button button-width-flexible aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0"
+                            >
+                              <span
+                                class="link-anchor"
+                                id="container_container_1383678985_button"
+                              ></span>
+
+                              <a
+                                class="cmp-button"
+                                id="button-028e494f55"
+                                href="{% url 'Express' %}"
+                                target="_self"
+                                data-analytics='{"trackedInteractions":"basic","interactionType":"dhl_utf_contentInteraction","content":{"name":"Explore {{site.name}} ","type":"Button","interaction":"Click","position":"","context":"","attributes":{"component":"dhl/components/core/button","name":"Explore {{site.name}} ","topic":"sub page teaser 1"}}}'
+                                data-cmp-clickable="false"
+                                data-di-id="#button-028e494f55"
+                              >
+                                <span class="cmp-button__text"
+                                  >Explore {{site.name}} 
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="container aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0"
+                >
+                  <span
+                    class="link-anchor"
+                    id="container_copy_copy_container_copy"
+                  ></span>
+                  <span
+                    class="link-anchor"
+                    id="root_container_copy_copy_container_copy"
+                  ></span>
+
+                  <div
+                    id="container-46e50d356d"
+                    class="cmp-container cmp-container--white cmp-container--padding-size-0 cmp-container--left-on-top cmp-container--is-flexible-image cmp-container--flexible-image-center-aligned"
+                  >
+                    <div
+                      class="aem-Grid aem-Grid--6 aem-Grid--tablet--6 aem-Grid--default--6 aem-Grid--phone--12"
+                    >
+                      <div
+                        class="image aem-GridColumn--offset--tablet--0 aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--phone--0"
+                      >
+                        <span
+                          class="link-anchor"
+                          id="container_copy_copy_container_copy_image"
+                        ></span>
+
+                        <div
+                          id="image-9d8cd754af"
+                          class="cmp-image"
+                          itemscope=""
+                          itemtype="http://schema.org/ImageObject"
+                          data-cmp-lazy="true"
+                          data-cmp-lazythreshold="0"
+                          data-cmp-src="https://www.dhl.com/content/experience-fragments/dhl/en/core/sub_page_teaser/image_right_2_greycolumns/xbu_master_spt_dhl_home_document_and_package_shipping/_jcr_content/root/container_copy_copy/container_copy/image.coreimg.80{.width}.jpeg/1655483113358/woman-signs-for-package-0002.jpeg"
+                          data-cmp-widths="284,385,588,1197"
+                          data-asset="https://www.dhl.com/content/dam/dhl/global/core/images/aspect-ratio/4_3/woman-signs-for-package-0002.jpg"
+                        >
+                          <img
+                            class="cmp-image__image"
+                            itemprop="contentUrl"
+                            alt=""
+                            data-cmp-hook-image="image"
+                            src="{% static 'main/woman-signs-for-package-0002.jpeg'%}"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="experiencefragment"
+    data-xf-path="https://www.dhl.com/content/experience-fragments/dhl/en/core/sub_page_teaser/image_left_2_greycolumns/xbu_standard_spt_dhl_home_pallets_containers_and_cargo"
+  >
+    <span
+      class="link-anchor"
+      id="parsysPath_experiencefragment_1512148575"
+    ></span>
+    <div
+      id="/xbu_master_spt_dhl_home_pallets_containers_and_cargo"
+      class="cmp-experiencefragment cmp-experiencefragment--image_left_2_greycolumns"
+    >
+      <div class="xf-content-height">
+        <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
+          <div
+            class="container container-margin-bottom aem-GridColumn aem-GridColumn--default--12"
+          >
+            <span class="link-anchor" id="root_container_copy_copy_"></span>
+
+            <div
+              id="container-a974ae5ea1"
+              class="cmp-container cmp-container--white cmp-container--padding-size-0 cmp-container--equal-height-desktop cmp-container--left-on-top cmp-container--horizontal-overlap-right-on-top"
+            >
+              <div
+                class="aem-Grid aem-Grid--12 aem-Grid--tablet--12 aem-Grid--default--12 aem-Grid--phone--12"
+              >
+                <div
+                  class="container aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0"
+                >
+                  <span
+                    class="link-anchor"
+                    id="container_copy_copy__container_copy"
+                  ></span>
+                  <span
+                    class="link-anchor"
+                    id="root_container_copy_copy__container_copy"
+                  ></span>
+
+                  <div
+                    id="container-1851387285"
+                    class="cmp-container cmp-container--white cmp-container--padding-size-0 cmp-container--left-on-top cmp-container--is-flexible-image cmp-container--flexible-image-center-aligned"
+                  >
+                    <div
+                      class="aem-Grid aem-Grid--6 aem-Grid--tablet--6 aem-Grid--default--6 aem-Grid--phone--12"
+                    >
+                      <div
+                        class="image aem-GridColumn--offset--tablet--0 aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--phone--0"
+                      >
+                        <span
+                          class="link-anchor"
+                          id="container_copy_copy__container_copy_image"
+                        ></span>
+
+                        <div
+                          id="image-0cec54a787"
+                          class="cmp-image"
+                          itemscope=""
+                          itemtype="http://schema.org/ImageObject"
+                          data-cmp-lazy="true"
+                          data-cmp-lazythreshold="0"
+                          data-cmp-src="https://www.dhl.com/content/experience-fragments/dhl/en/core/sub_page_teaser/image_left_2_greycolumns/xbu_standard_spt_dhl_home_pallets_containers_and_cargo/_jcr_content/root/container_copy_copy_/container_copy/image.coreimg.80{.width}.jpeg/1683030270879/workers-at-the-container-port-0001.jpeg"
+                          data-cmp-widths="284,385,588,1197"
+                          data-asset="https://www.dhl.com/content/dam/dhl/global/core/images/aspect-ratio/4_3/workers-at-the-container-port-0001.jpg"
+                        >
+                          <img
+                            class="cmp-image__image"
+                            itemprop="contentUrl"
+                            alt=""
+                            data-cmp-hook-image="image"
+                            src="{% static 'main/workers-at-the-container-port-0001.jpeg'%}"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="container aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0"
+                >
+                  <span
+                    class="link-anchor"
+                    id="container_copy_copy__container"
+                  ></span>
+                  <span
+                    class="link-anchor"
+                    id="root_container_copy_copy__container"
+                  ></span>
+
+                  <div
+                    id="container-5345c5e149"
+                    class="cmp-container cmp-container--transparent cmp-container--padding-position-top cmp-container--padding-position-bottom cmp-container--gutter-21 cmp-container--padding-size-21 cmp-container--left-on-top"
+                  >
+                    <div
+                      class="aem-Grid aem-Grid--6 aem-Grid--tablet--12 aem-Grid--default--6 aem-Grid--phone--12"
+                    >
+                      <div
+                        class="container container-shadow-top aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--6"
+                      >
+                        <span
+                          class="link-anchor"
+                          id="container_container"
+                        ></span>
+                        <span
+                          class="link-anchor"
+                          id="container_copy_copy__container_container"
+                        ></span>
+                        <span
+                          class="link-anchor"
+                          id="root_container_copy_copy__container_container"
+                        ></span>
+
+                        <div
+                          id="container-77e124a115"
+                          class="cmp-container cmp-container--white cmp-container--padding-size-28 cmp-container--left-on-top"
+                        >
+                          <div
+                            class="aem-Grid aem-Grid--12 aem-Grid--default--12"
+                          >
+                            <div
+                              class="title title-left title-black title-margin-none aem-GridColumn aem-GridColumn--default--12"
+                            >
+                              <span
+                                class="link-anchor"
+                                id="container_container_title"
+                              ></span>
+
+                              <div class="cmp-title" id="title-d4985e0a83">
+                                <h2
+                                  class="cmp-title__text cmp-title__text--level2"
+                                >
+                                  Cargo Shipping
+                                </h2>
+                              </div>
+                            </div>
+                            <div
+                              class="text text-left text-black text-margin-top aem-GridColumn aem-GridColumn--default--12"
+                            >
+                              <span
+                                class="link-anchor"
+                                id="container_container_text"
+                              ></span>
+
+                              <div id="text-c0fc5bedf4" class="cmp-text">
+                                <p
+                                  class="cmp-text__inline-text cmp-text__inline-text--small-body-copy"
+                                >
+                                  <span
+                                    class="cmp-text__inline-text cmp-text__inline-text--intro-size-2"
+                                    >Business Only</span
+                                  >
+                                </p>
+                              </div>
+                            </div>
+                            <div
+                              class="separator separator-type-introduction aem-GridColumn aem-GridColumn--default--12"
+                            >
+                              <span
+                                class="link-anchor"
+                                id="container_container_separator"
+                              ></span>
+                              <div
+                                class="cmp-separator"
+                                id="separator-bb161121f5"
+                              >
+                                <hr class="cmp-separator__horizontal-rule" />
+                              </div>
+                            </div>
+                            <div
+                              class="text text-left text-default text-black text-margin-top aem-GridColumn aem-GridColumn--default--12"
+                            >
+                              <span
+                                class="link-anchor"
+                                id="container_container_text_589125532"
+                              ></span>
+
+                              <div id="text-dd64cb9c3b" class="cmp-text">
+                                <p
+                                  class="cmp-text__inline-text cmp-text__inline-text--small-body-copy"
+                                >
+                                  <span
+                                    class="cmp-text__inline-text cmp-text__inline-text--intro-size-3"
+                                    >Discover shipping and logistics service
+                                    options from {{site.name}} Forwarding.</span
+                                  >
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="container container-shadow-middle aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0"
+                      >
+                        <span
+                          class="link-anchor"
+                          id="container_container_426561891"
+                        ></span>
+                        <span
+                          class="link-anchor"
+                          id="container_copy_copy__container_container_426561891"
+                        ></span>
+                        <span
+                          class="link-anchor"
+                          id="root_container_copy_copy__container_container_426561891"
+                        ></span>
+
+                        <div
+                          id="container-b0cc6de814"
+                          class="cmp-container cmp-container--light-grey cmp-container--gutter-21 cmp-container--padding-size-28 cmp-container--left-on-top"
+                        >
+                          <div
+                            class="aem-Grid aem-Grid--6 aem-Grid--tablet--12 aem-Grid--default--6 aem-Grid--phone--12"
+                          >
+                            <div
+                              class="title title-left title-black title-margin-none aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--6"
+                            >
+                              <span
+                                class="link-anchor"
+                                id="container_container_426561891_title"
+                              ></span>
+
+                              <div class="cmp-title" id="title-f283005cf0">
+                                <h5
+                                  class="cmp-title__text cmp-title__text--level5"
+                                >
+                                  Services Available
+                                </h5>
+                              </div>
+                            </div>
+                            <div
+                              class="list dynamic-icon-bg-color bg-yellow top-margin bullet-color-black spacing-large aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--tablet--6 aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0"
+                            >
+                              <span
+                                class="link-anchor"
+                                id="container_container_426561891_list"
+                              ></span>
+                              <ul id="list-9bd1fe9d9c" class="cmp-list">
+                                <li
+                                  class="cmp-list__item has-icon icon-plane-air-freights bi bi-airplane"
+                                >
+                                  <span class="cmp-list__item-title"
+                                    >Air Freight</span
+                                  >
+                                </li>
+
+                                <li
+                                  class="cmp-list__item has-icon icon-truck-road-freights bi bi-arrow-down-up"
+                                >
+                                  <span class="cmp-list__item-title"
+                                    >Road Freight</span
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <div
+                              class="list dynamic-icon-bg-color bg-yellow top-margin bullet-color-black spacing-large aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--tablet--6 aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0"
+                            >
+                              <span
+                                class="link-anchor"
+                                id="container_container_426561891_list_copy"
+                              ></span>
+                              <ul id="list-88ac4b0204" class="cmp-list">
+                                <li
+                                  class="cmp-list__item has-icon icon-containershipc bi bi-align-center"
+                                >
+                                  <span class="cmp-list__item-title"
+                                    >Ocean Freight</span
+                                  >
+                                </li>
+
+                                <li
+                                  class="cmp-list__item has-icon icon-train-rail-freightsc bi bi-view-list"
+                                >
+                                  <span class="cmp-list__item-title"
+                                    >Rail Freight</span
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="container container-margin-bottom container-shadow-bottom aem-GridColumn--tablet--12 aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--6"
+                      >
+                        <span
+                          class="link-anchor"
+                          id="container_container_1383678985"
+                        ></span>
+                        <span
+                          class="link-anchor"
+                          id="container_copy_copy__container_container_1383678985"
+                        ></span>
+                        <span
+                          class="link-anchor"
+                          id="root_container_copy_copy__container_container_1383678985"
+                        ></span>
+
+                        <div
+                          id="container-8097c97966"
+                          class="cmp-container cmp-container--white cmp-container--padding-size-28 cmp-container--left-on-top"
+                        >
+                          <div
+                            class="aem-Grid aem-Grid--12 aem-Grid--default--12"
+                          >
+                            <div
+                              class="button button-width-flexible aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0"
+                            >
+                              <span
+                                class="link-anchor"
+                                id="container_container_1383678985_button"
+                              ></span>
+
+                              <a
+                                class="cmp-button"
+                                id="button-37e7bf5fb0"
+                                href="{% url 'GlobalForwarding' %}"
+                                target="_self"
+                                data-analytics='{"trackedInteractions":"basic","interactionType":"dhl_utf_contentInteraction","content":{"name":"Explore {{site.name}} Forwarding","type":"Button","interaction":"Click","position":"","context":"","attributes":{"component":"dhl/components/core/button","name":"dear author please copy the text that is in the CTA text field","topic":"dear author, please look at the context of the component and name it that"}}}'
+                                data-cmp-clickable="false"
+                                data-di-id="#button-37e7bf5fb0"
+                              >
+                                <span class="cmp-button__text"
+                                  >Explore {{site.name}} Forwarding</span
+                                >
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="experiencefragment"
+    data-xf-path="https://www.dhl.com/content/experience-fragments/dhl/en/core/help_and_related_tea/2columns_1row/xbu_master_hrt_dhl_home_products_and_value_added_services_no_csi"
+  >
+    <span
+      class="link-anchor"
+      id="parsysPath_experiencefragment_2122390070"
+    ></span>
+    <div
+      id="experiencefragment-a0fa1c80e5"
+      class="cmp-experiencefragment cmp-experiencefragment--2columns_1row"
+    >
+      <div class="xf-content-height">
+        <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
+          <div
+            class="container container-margin-bottom aem-GridColumn aem-GridColumn--default--12"
+          >
+            <span class="link-anchor" id="root_container_copy"></span>
+
+            <div
+              id="container-3f3da66634"
+              class="cmp-container cmp-container--white cmp-container--gutter-21 cmp-container--padding-size-0 cmp-container--equal-height-desktop cmp-container--left-on-top"
+            >
+              <div
+                class="aem-Grid aem-Grid--12 aem-Grid--tablet--12 aem-Grid--default--12 aem-Grid--phone--12"
+              >
+                <div
+                  class="teaser teaser-has-copy teaser-align-left teaser-top-margin aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--tablet--6 aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0"
+                >
+                  <span
+                    class="link-anchor"
+                    id="root_container_copy_teaser"
+                  ></span>
+
+                  <div
+                    id="teaser-4198892a58"
+                    class="cmp-teaser cmp-teaser--with-overlay-link"
+                  >
+                    <a
+                      class="cmp-teaser__link"
+                      href="{% url 'Sustainability' %}"
+                      tabindex="0"
+                      target="_self"
+                      data-cmp-clickable="false"
+                      data-analytics='{"trackedInteractions":"basic","interactionType":"dhl_utf_contentInteraction","content":{"name":"Green Logistics","type":"Button","interaction":"Click","position":"","context":"","attributes":{"component":"dhl/components/core/teaser","name":"Green Logistics","topic":"related teaser 1"}}}'
+                    >
+                      <div class="cmp-teaser__image">
+                        <span
+                          class="link-anchor"
+                          id="root_container_copy_teaser"
+                        ></span>
+
+                        <div
+                          id="image-4198892a58"
+                          class="cmp-image"
+                          itemscope=""
+                          itemtype="http://schema.org/ImageObject"
+                          data-cmp-lazy="true"
+                          data-cmp-lazythreshold="0"
+                          data-cmp-src="https://www.dhl.com/content/experience-fragments/dhl/en/core/help_and_related_tea/2columns_1row/xbu_master_hrt_dhl_home_products_and_value_added_services_no_csi/_jcr_content/root/container_copy/teaser.coreimg.80{.width}.jpeg/1724245263443/male-dhl-employee-driving-electric-dhl-van.jpeg"
+                          data-cmp-widths="284,385,588,1197"
+                          data-asset="https://www.dhl.com/content/dam/dhl/global/core/images/aspect-ratio/16_9/male-dhl-employee-driving-electric-dhl-van.jpeg"
+                        >
+                          <img
+                            class="cmp-image__image"
+                            itemprop="contentUrl"
+                            alt=""
+                            data-cmp-hook-image="image"
+                            src="{% static 'main/male-dhl-employee-driving-electric-dhl-van.jpeg'%}"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="cmp-teaser__content">
+                        <h2 class="cmp-teaser__title">Sustainability</h2>
+
+                        <div class="cmp-teaser__description">
+                          <div class="has-rte">
+                            <p class="has-rte"></p>
+                            <div class="has-rte">
+                              <p class="has-rte">
+                                Sustainable business begins with sustainable
+                                supply chains.&nbsp;We proudly provide a
+                                comprehensive portfolio of emission reduced
+                                logistics solutions. Find out what we have to
+                                offer, why we’re committed to sustainability,
+                                and how our industry is helping deliver an even
+                                better world.
+                              </p>
+                            </div>
+                            <p class="has-rte"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="teaser teaser-has-copy teaser-top-margin aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--tablet--6 aem-GridColumn--default--6 aem-GridColumn--offset--phone--0 aem-GridColumn--offset--default--0"
+                >
+                  <span
+                    class="link-anchor"
+                    id="root_container_copy_teaser_copy"
+                  ></span>
+
+                  <div
+                    id="teaser-be38645917"
+                    class="cmp-teaser cmp-teaser--with-overlay-link"
+                  >
+                    <a
+                      class="cmp-teaser__link cmp-teaser__link--external"
+                      tabindex="0"
+                      aria-describedby="a11y-message--new-window a11y-message--external-link"
+                      target="_blank"
+                      data-cmp-clickable="false"
+                      data-analytics='{"trackedInteractions":"basic","interactionType":"dhl_utf_contentInteraction","content":{"name":"{{site.name}} Connectedness Index","type":"Button","interaction":"Click","position":"","context":"","attributes":{"component":"dhl/components/core/teaser","name":"{{site.name}} Connectedness Index","topic":"related teaser 3"}}}'
+                      rel="noopener noreferrer"
+                    >
+                      <div class="cmp-teaser__image">
+                        <span
+                          class="link-anchor"
+                          id="root_container_copy_teaser_copy"
+                        ></span>
+
+                        <div
+                          id="image-be38645917"
+                          class="cmp-image"
+                          itemscope=""
+                          itemtype="http://schema.org/ImageObject"
+                          data-cmp-lazy="true"
+                          data-cmp-lazythreshold="0"
+                          data-cmp-src="https://www.dhl.com/content/experience-fragments/dhl/en/core/help_and_related_tea/2columns_1row/xbu_master_hrt_dhl_home_products_and_value_added_services_no_csi/_jcr_content/root/container_copy/teaser_copy.coreimg.80{.width}.jpeg/1710309046542/core-global-connectedness-report-2024.jpeg"
+                          data-cmp-widths="284,385,588,1197"
+                          data-asset="https://www.dhl.com/content/dam/dhl/global/core/images/media-gallery-landscape/core-global-connectedness-report-2024.jpg"
+                        >
+                          <img
+                            class="cmp-image__image"
+                            itemprop="contentUrl"
+                            alt=""
+                            data-cmp-hook-image="image"
+                            src="{% static 'main/core-global-connectedness-report-2024.jpeg'%}"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="cmp-teaser__content">
+                        <h2 class="cmp-teaser__title">
+                          {{site.name}} Connectedness Report
+                        </h2>
+
+                        <div class="cmp-teaser__description">
+                          <div class="has-rte">
+                            <p class="has-rte"></p>
+                            <div class="has-rte">
+                              <p class="has-rte">
+                                The {{site.name}} Connectedness Report 2024 reveals
+                                that globalization is at a record high – despite
+                                the pandemic and geopolitical conflicts.
+                              </p>
+                            </div>
+                            <p class="has-rte"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
