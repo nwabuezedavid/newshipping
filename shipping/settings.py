@@ -86,8 +86,6 @@ WSGI_APPLICATION = 'shipping.wsgi.application'
 #     }
 # }# Add these at the top of your settings.py
 import  os 
-from os import getenv
-from dotenv import load_dotenv
 from urllib.parse import urlparse
 # Replace the DATABASES section of your settings.py with this
 DATABASE_URL='postgresql://neondb_owner:5T7taMdgJSVZ@ep-morning-lab-a5g0675v.us-east-2.aws.neon.tech/neondb?sslmode=require'
