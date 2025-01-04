@@ -84,18 +84,28 @@ WSGI_APPLICATION = 'shipping.wsgi.application'
 #         'ENGINE': 'django.db.backends.sqlite3',
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
-# }
+# }# Add these at the top of your settings.py
+import  os 
+from os import getenv
+from dotenv import load_dotenv
+from urllib.parse import urlparse
+# Replace the DATABASES section of your settings.py with this
+DATABASE_URL='postgresql://neondb_owner:5T7taMdgJSVZ@ep-morning-lab-a5g0675v.us-east-2.aws.neon.tech/neondb?sslmode=require'
 
+tmpPostgres = urlparse(DATABASE_URL)
+print(tmpPostgres)
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'verceldb',
-        'USER': 'default',
-        'PASSWORD': 'wK7Pi3BHmpNd',
-        'HOST': 'ep-divine-cloud-a2guvjw4-pooler.eu-central-1.aws.neon.tech',
-        'PORT': '5432',
+        'NAME': tmpPostgres.path.replace('/', ''),
+        'USER': tmpPostgres.username,
+        'PASSWORD': tmpPostgres.password,
+        'HOST': tmpPostgres.hostname,
+        'PORT': 5432,
     }
 }
+
+  
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
