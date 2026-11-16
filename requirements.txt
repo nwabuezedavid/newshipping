@@ -1,4 +1,4 @@
-﻿cycler==0.12.1
+cycler==0.12.1
 Django==5.0.4
 django-cors-headers==4.3
 h11==0.14.0
